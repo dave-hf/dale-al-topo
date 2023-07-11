@@ -1,0 +1,45 @@
+.moleGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-height: 70%;
+  align-items: stretch;
+}
+
+.cell {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+  box-sizing: border-box;
+}
+
+.pipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  background: url("../assets/images/tuberia.png") no-repeat center/contain;
+  border: none;
+}
+
+.mole {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  background: url("../assets/images/topo.png") no-repeat center/contain;
+  border: none;
+}
+
+/* Estilos para smartphone */
+@media only screen and (max-width: 480px) {
+  .moleGrid {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,24 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+form {
+  text-align: center;
+}
+
+.form-container .game-button {
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.error {
+  padding: 10px 0 20px;
+}
